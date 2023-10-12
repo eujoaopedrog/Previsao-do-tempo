@@ -15,12 +15,12 @@ body {
 }
 
 .container {
-    background-color: #000;
-    opacity: 0.8;
     border-radius: 25px;
     padding: 20px;
     width: 95%;
     max-width: 450px;
+    background-color: rgba(3, 67, 195, 0.125);
+    backdrop-filter: blur(5px);
 }
 
 .title {
@@ -55,6 +55,7 @@ body {
     background-color: #7c7c7c2b;
     cursor: pointer;
     float: right;
+    color: #fff;
 }
 
 .img-busca {
