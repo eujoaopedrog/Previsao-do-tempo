@@ -109,7 +109,28 @@ body {
     text-transform: capitalize;
 }
 
-.umidade {
+.wind{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     color: #fff;
     margin-top: 20px;
+}
+
+.humidity, .windSpeed{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    font-size: 30px;
+}
+
+.umidade {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.p-wind{
+    margin-left: 10px;
 }

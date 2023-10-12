@@ -2,6 +2,7 @@ const key = "425b3f6ef37dcccdff0c2c79e6492b9a";
 
 function colocarDadosNaTela(dados) {
     console.log(dados)
+    document.querySelector('.windSpeed').innerHTML = 
     document.querySelector('.title-min').innerHTML = "Mínima:"
     document.querySelector('.title-atual').innerHTML = "Atual:"
     document.querySelector('.title-max').innerHTML = "Máxima:"
@@ -11,6 +12,7 @@ function colocarDadosNaTela(dados) {
     document.querySelector('.p-max').innerHTML = Math.floor(dados.main.temp_max) + "°C";
     document.querySelector('.texto-previsao').innerHTML = dados.weather[0].description;
     document.querySelector('.umidade').innerHTML = 'Umidade: ' + dados.main.humidity + "%";
+    document.querySelector('#windSpeed').innerHTML = 'Vento: ' + dados.wind.speed + "km/h"
     document.querySelector('.img-previsao').src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`
 
 }

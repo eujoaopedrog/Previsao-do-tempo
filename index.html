@@ -23,7 +23,11 @@
             <p>PREVISÃO DO TEMPO</p>
         </div>
         <div class="caixa-maior">
-            <input class="input-cidade" type="text" name="" id="enter" keypress="cliqueiNoBotao()" placeholder="Ditige o nome da cidade">
+            <input class="input-cidade" type="text" name="" id="cidade" placeholder="Ditige o nome da cidade"
+                list="cidade">
+            <datalist id="cidade">
+                <option value="São Paulo"></option>
+            </datalist>
             <button class="botao-busca" onclick="cliqueiNoBotao()">
                 <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="Busca">
             </button>
@@ -51,13 +55,23 @@
                 <img class="img-previsao">
                 <p class="texto-previsao"></p>
             </div>
+            <div class="wind">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="umidade"></p>
+                </div>
+                <div class="windSpeed">
+                    <i class="fa-solid fa-wind"></i>
+                    <p id="windSpeed" class="p-wind"></p>
+                </div>
+            </div>
 
-            <p class="umidade"></p>
         </div>
     </div>
 
     <!-- SCRIPT -->
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8df0494426.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
