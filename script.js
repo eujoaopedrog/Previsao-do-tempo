@@ -2,7 +2,6 @@ const key = "425b3f6ef37dcccdff0c2c79e6492b9a";
 
 function colocarDadosNaTela(dados) {
     console.log(dados)
-    document.querySelector('.windSpeed').innerHTML = 
     document.querySelector('.title-min').innerHTML = "Mínima:"
     document.querySelector('.title-atual').innerHTML = "Atual:"
     document.querySelector('.title-max').innerHTML = "Máxima:"
